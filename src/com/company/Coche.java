@@ -9,12 +9,12 @@ public class Coche {
     private String Matricula;
     private String Marca;
     private String Modelo;
-    private Double Precio;
+    private int Precio;
 
 
     public Coche(){}
 
-    public Coche(String Matricula, String Marca, String Modelo,Double Precio){
+    public Coche(String Matricula, String Marca, String Modelo,int Precio){
         this.Matricula = Matricula;
         this.Marca = Marca;
         this.Modelo = Modelo;
@@ -45,11 +45,11 @@ public class Coche {
         Modelo = modelo;
     }
 
-    public Double getPrecio() {
+    public int getPrecio() {
         return Precio;
     }
 
-    public void setPrecio(Double precio) {
+    public void setPrecio(int precio) {
         Precio = precio;
     }
 
