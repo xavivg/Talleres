@@ -39,4 +39,10 @@ public class RegistroVehiculos {
         }
         return cochesall;
     }
+    public  Optional<Coche> obtenerVehiculo(String matricula){
+        return coches.stream().filter(coche -> coche.getMatricula().equals(matricula)).findFirst();
+    }
+    public Optional<Coche> obtenerVehiculoPrecioMax(){
+        return coches.stream().max(Comparator.comparing(Coche::getPrecio));
+    }
 }
